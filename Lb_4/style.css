@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #0a0a0a;
+    color: #00ff00;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.workspace {
+    display: flex;
+    gap: 20px;
+}
+
+.radar-area {
+    flex: 2;
+    background: #111111;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.panel {
+    background: #111111;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.panel h3 {
+    color: #00ff00;
+    margin-bottom: 12px;
+    font-size: 1em;
+}
+
+.input-row {
+    margin-bottom: 10px;
+}
+
+.input-row label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.85em;
+    color: #cccccc;
+}
+
+.input-row input {
+    width: 100%;
+    padding: 6px;
+    background: #000000;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+}
+
+.input-row input:focus {
+    outline: none;
+    border-color: #00ff00;
+}
+
+.btn {
+    width: 100%;
+    background: #222222;
+    color: #00ff00;
+    border: 1px solid #444444;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #333333;
+    border-color: #00ff00;
+}
+
+#chart {
+    width: 100% !important;
+    height: 500px !important;
+    min-height: 500px;
+}
+
+.targets {
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 0.8em;
+}
+
+.target {
+    background: #0a0a0a;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-left: 3px solid #00ff00;
+    border-radius: 2px;
+}
+
+.targets::-webkit-scrollbar {
+    width: 4px;
+}
+
+.targets::-webkit-scrollbar-thumb {
+    background: #444444;
+    border-radius: 2px;
+}
